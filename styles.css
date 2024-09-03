@@ -1,0 +1,489 @@
+/* css/styles.css */
+
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logo .logo-blue {
+    color: blue;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Updated home-image styling for better view */
+
+.home-image {
+    flex: 1;
+    text-align: center;
+}
+
+
+ /*
+.home-image img {   */
+    
+   /* max-width: 80%; /* Adjust the percentage to fit the image better */
+    /*height: auto; 
+   /* border-radius: 8px; /* Slightly rounded corners */
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+   /* margin: 0 auto; /* Center the image horizontally */
+   /* display: block; /* Ensure it's displayed as a block element */
+/*   
+}  */
+
+
+.home-image img {
+    width: 600px; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure it's displayed as a block element */
+}
+
+
+/* Buttons styling (no change ) */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+/* Resume Button */
+.resume a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Main Section */
+section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Page Styles */
+section#about {
+
+        /* flex: 1;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Contact Page Styles */
+section#contact {
+
+        /* flex: 1;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-form button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #2980b9;
+}
+
+
+/* Hire Me Page Styles */
+section#hire-me {
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#hire-me h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#hire-me p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#hire-me ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#hire-me ul li {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#hire-me-form {
+    max-width: 600px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+#hire-me-form label {
+    display: block;
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+#hire-me-form input,
+#hire-me-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#hire-me-form button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hire-me-form button:hover {
+    background-color: #2980b9;
+}
+
+
+/* Projects Page Styles */
+section#projects {
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+
+
+
+/* Blog Section */
+section#blog {
+    /* flex: 1;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+section#blog h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+section#blog p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Social media icons */
+footer .socialIcons {
+    margin-bottom: 20px;
+}
+
+footer .socialIcons a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer .socialIcons a:hover {
+    color: #3498db;
+}
+
+.footerBottom {
+    border-top: 1px solid #34495e;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.footerBottom p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footerBottom .designer {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Home Page Styles */
+
+section#home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    background-color: #f5f5f5;
+}
+
+.home-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.home-content h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.home-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007bff; /* A strong, contrasting color */
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.home-content .buttons {
+    margin-top: 20px;
+}
+
+.home-content .buttons button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.home-content .buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Buttons styling (no change as requested) */
+/* .buttons {
+    display: flex;
+    gap: 20px;
+} */
+
+.name-highlight {
+    color: #007bff;
+}
+
+/* .home-image {
+    flex: 1;
+    text-align: right;
+}
+
+.home-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
