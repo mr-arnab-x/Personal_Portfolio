@@ -42,6 +42,7 @@ nav ul {
 
 nav ul li {
     display: inline;
+    transition: color 0.3s ease;
 }
 
 nav ul li a {
@@ -49,6 +50,9 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #3498db;
+}
 /* Updated home-image styling for better view */
 
 .home-image {
